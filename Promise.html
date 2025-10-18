@@ -1,0 +1,40 @@
+<html>
+  <body>
+    <script>
+      var num = 10;
+      let pr = new Promise((res, rej) => {
+        if (num % 2 == 0) {
+          res("Congrat num is Even");
+        } else {
+          rej("num is odd");
+        }
+      })
+        .then((msg) => {
+        console.log(msg);
+        })
+        .catch((err) => {
+          console.log(err);
+        });
+    </script>
+  </body>
+</html>
+
+<!-- var num=window.prompt("Enter number");
+            var pr=new Promise((resolve,reject)=>{
+                if(num%2==0) 
+                 {
+                    resolve("congrats number is even..!");
+                 }
+                 else 
+                 {
+                    reject("sorry number is odd..!");
+                 }
+            }) 
+
+            pr.then(
+                (msg)=>{ document.write(`<h3>${msg}</h3>`); }
+            ).catch(
+                (err)=>{ console.log(err); }
+            ).finally(
+                ()=>{ alert("successfully finished"); }
+            )   -->
