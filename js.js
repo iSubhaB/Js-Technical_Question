@@ -6,15 +6,38 @@
 // }
 // console.log(obj);
 
+
 //  console.log(typeof NaN);
 // console.log(NaN==NaN);   //NaN is never equal to anything, not even itself.
 // console.log(NaN===NaN);   // NaN is falsy value
+
 
 // let a= 10
 // console.log(++a)
 // console.log(a++)
 // console.log(a++)
 // console.log(a)
+
+
+
+//  console.log(0.1+0.2===0.3)
+// console.log(typeof null)  
+// console.log(typeof NaN)  
+// console.log(typeof [Object])
+// console.log(typeof Object)
+// console.log(  NaN(NaN)) //err
+
+
+// console.log(true && "hellow")
+// console.log(false && "Welcome")// `The first operand is false (which is falsy).So JavaScript stops right there (short-circuit evaluation) and returns the first falsy value.Therefore:`
+
+
+
+// const arr= [1,2,3,4,5,6]
+// const arr2= arr.filter(num=>num*2)  // there are no condition so it return the array
+// console.log(arr2)
+
+
 
 //        var arr= {
 //             name: "John",
@@ -25,23 +48,33 @@
 //      console.log(k);
 //  }
 
+
+
 // let counter = 0; // example of impure function
 // function increaseCounter() {
 //   counter++;
 //   return counter;
 // }
+
+
 // console.log(increaseCounter()); // 1
 // console.log(increaseCounter()); // 2 (different output, same input!)
+
+
 
 // var arr = [1, 2, 3, 4, 5];
 // let c = arr.splice(2, 4);
 // document.write(arr + "</br>");
 // document.write(c + "</br>");
 
+
+
 // var arr = [1, 2, 3, 4, 5];
 // arr.map((v) => {
 //   document.write(v + "</br>");
 // });
+
+
 
 // var arr = [1, 2, 3, 4, 5];
 // let va = arr.reduce((acc, v, index) => {
@@ -51,6 +84,7 @@
 // }, 0);
 // console.log(va);
 
+
 // var arr = [1, 2, 3, 4, 5];
 // let va = arr.reduce((acc, v, index) => {
 //   acc = acc + v;
@@ -58,15 +92,18 @@
 // }, 0);
 // document.write(va);
 
+
 // var arr = [10, 30, 50, 71, 37]; // reverse the array
 // let b = arr.reduceRight((acc, v) => {
 //   return acc + " " + v;
 // });
 // document.write(b);
 
+
 // var arr = [10, 30, 50, 71, 37]; // reverse the array by resverse method
 // arr.reverse();
 // document.write(arr);
+
 
 //  var arr= [10,30,50,71,37]       // add the value
 // let b=arr.reduceRight((acc,v)=>{
@@ -74,17 +111,23 @@
 // })
 //  document.write(b)
 
+
 // const arr = ['hello',"hi",'welcome','by'];
 // arr.reverse();
 // document.write(arr);
 
+
 // console.log(0 == "0");
+
 
 // console.log("5" + 5);
 
+
 // console.log("5" - 5);
 
+
 // console.log(true + 5);
+
 
 // for (var i = 0; i < 5; i++) {
 //   document.write(i);
@@ -94,11 +137,14 @@
 //   }, i * 1000);
 // }
 
+
 // console.log(2);
 // setTimeout(() => {
 //     console.log(3)
 // }, 0);
 // console.log(4);
+
+
 
 // const input1={a:1,b:2, c:3, d:10, e:12}  // return only common value
 // const input2={a:2,e:12, f:6 ,d:10}
@@ -115,6 +161,7 @@
 // }
 // abc(input1,input2)
 
+
 // const input =[1,2,-2,11,7,1]  //sum off all (it will work same as in reduce)
 // let arr=input.reduceRight((acc,v)=>{
 // acc=acc+ v
@@ -122,14 +169,17 @@
 // })
 // document.write(arr)
 
+
 //       const input =[1,2,-2,11,7,1]   // reverse the no
 //     const arr= input.reverse((v)=>{
 //       return v
 //     })
 //     console.log(arr)
 
+
 //     const arr2= input.sort((a,b)=>a-b)  // sort the numbber
 //     console.log(arr2)
+
 
 // const input =[1,2,11,7,1,84]   // max value -- for -of directly print the value where for in index
 // let max= input[0]
@@ -140,12 +190,15 @@
 // }
 // document.write (max)
 
+
 // const input =[1,2,-2,11,7,1]   // 2nd highest no print
+
 
 // let arr=input.sort((a,b)=>{  // short small to big
 //   return a-b
 // })
 // document.write(arr[arr.length-1]) // after short here printing 2nd index from last
+
 
 // const arr= [5,7,9,11,15,17] // find missing odd no
 // let missing=0;
@@ -157,6 +210,7 @@
 // }
 //    console.log(missing);
 
+
 //  const arr = [5, 7, 9, 11, 15, 17, 21]; // find multiple missing  missing odd no
 // let missing = [];
 // for (let i = 0; i <= arr.length; i++) {
@@ -166,6 +220,7 @@
 // }
 // document.write(missing[1]);
 
+
 // const str= 'This is Javascript Code'  // revesre every word and sequence will be same
 // const arr= str.split(" ")
 // const arr2= arr.map((v)=>{
@@ -173,7 +228,9 @@
 // })
 // console.log(arr2.join(" "))
 
+
 // const str = "this is javascript and you to find max char"; // find max char of this string
+
 
 // let maxchar = "";
 // let arr = str.split(" ");
@@ -186,6 +243,7 @@
 // });
 // console.log(maxchar);
 
+
 // const f=function(){   //call back function
 //   console.log("say hellow")
 // }
@@ -194,10 +252,12 @@
 // }
 // abc(f)
 
+
 // let arr = [1, 5, 3, 4][(1, 2, 3)];  //   arr  =[1,5,3,4][3]
 //                                     //   arr  = index of 3 is 4
 //                                     // output 4
 //   document.write(arr);
+
 
 // let obj = {
 //   1: "a",
@@ -207,6 +267,7 @@
 // };
 // console.log(obj);
 
+
 // {
 //   function fun() {
 //   console.log("Hellow");
@@ -214,10 +275,12 @@
 // }
 // fun();
 
+
 // console.log("1" + 2 + 2);
 // console.log(2 + 2 + "1" + 2 + 2);
 // console.log("2"-"2");
 // console.log(2-"2");
+
 
 // function abc(a, b, c) {}
 // console.log(abc.length);
@@ -227,6 +290,7 @@
 // //
 // function pqr(a = 0, b, c) {}
 // console.log(pqr.length);
+
 
 // const str = "MyNameIsSubhaBiswas";
 // let space=''
@@ -239,38 +303,47 @@
 // }
 // console.log(space); // Output: "My Name Is Subha Biswas"
 
+
 //    const days = ["Sunday", "Tuesday", "Thursday", "Saturday"];
+
 
 // const fou=days.find((day)=>{
 //       return day.startsWith("S")
 // })
 // console.log("find:", fou);
 
+
 // const allContainA = days.every((day)=>{
 //       return day.includes("a")
 // })
 // console.log("every:", allContainA);
 
+
 // const hasThursday = days.some(day => day === "Thursday");
 // console.log("some:", hasThursday);
+
 
 // const arr=[1,2,3,4,5,6]
 // arr.splice(2,2,90)
 // document.write(arr) // 1,2,90,5,6
 
+
 // const arr= [1,2,3,4,5,6];
 // console.log(arr.includes(2))
+
 
 // //Delete last 3 elemnet of a array
 // const arr=[1,2,3,4,5,6]
 // arr.splice(arr.length-3,3)
 // document.write(arr)
 
+
 // const arr= [1,2,3,4,5]
 // const res= arr.reduce((avv,val)=>{
 //   return avv>val
 // })
 // console.log(res)
+
 
 // const arr=[1,3,4,8,4,6,5,3] // print the index in which combine value is 10
 // let arr2=[]
@@ -281,18 +354,23 @@
 // }
 // document.write(arr2)
 
+
 // console.log(isNaN("subha"));
+
 
 // const arr=[1,2,3,4,5,6,7]
 // let arr2= arr.map(el=>el<2)
 // console.log(arr2)
 
+
 // const arr=[1,2,3,4,5,6,7]
 // let arr2= arr.map(el=>el=2)
 // console.log(arr2)
 
+
 // console.log({}=={})
 // console.log({}==={})
+
 
 // const str="my name is subha biswas"
 // let arr = str.split(" ")
@@ -304,12 +382,16 @@
 // }
 // console.log(max)
 
+
 // console.log(isNaN("subha"))
+
 
 // const arr1=[1,2,3,4,5,6]
 // const arr2=[6,3,7,8,9,10,4]
 
+
 // let common=[];
+
 
 // for (let i=0;i<arr1.length;i++){
 //     for(let j=0; j<arr2.length;j++){
@@ -320,17 +402,23 @@
 // }
 // console.log(common)
 
+
 // console.log("subah"-100)
+
 
 // function abc(){
 //     var a= 100;
 
+
 // }
 // console.log(a)
+
 
 // const arr= [1,2,3,4,4,5,5,8,8]  //filter out all duplicate
 // const arr2= new Set(arr)
 // console.log(arr2)
+
+
 
 // const arr= [1,2,3,4,4,5,5,8,8]
 // const unique = arr.filter((v)=>{
@@ -338,9 +426,12 @@
 // })
 // console.log(unique); // [1, 2, 3]
 
+
+
 // const arr=[1,3,4,7,9,4,2]  // find the two elemnet which total value is 10
 // const tar= 10
 // const arr2= []
+
 
 // for (let i=0;i<arr.length;i++){
 //   for (let j=i+1;i<arr.length;i++){
@@ -352,18 +443,23 @@
 // }
 // console.log(arr2)
 
+
 // const arr=[1,2,3,3,4,4,5,6,9,9] // new array with no repeiting value
+
 
 // const arr2= new Set(arr)
 // console.log(arr2)
 
+
 // const arr= [10,20,50,87,28,95]  // find max no // way1
+
 
 // let arr2=arr.sort((a,b)=>a-b)
 // let min= arr2[0]
 // let max=arr2[arr.length-1]
 // console.log(max)
 // console.log(min)
+
 
 // const arr= [10,20,50,87,28,95]   // find max
 // let max= arr[0]
@@ -373,6 +469,7 @@
 //   }
 // }
 // console.log(max)
+
 
 // const str= "my name is subha biswas"  //find max length word
 // const arr= str.split(" ")
@@ -384,6 +481,7 @@
 //   }
 // }
 // console.log(max)
+
 
 // const arr= [10,20,50,87,28,95] // delete 1st value
 // arr.shift()
@@ -672,3 +770,39 @@
 // const c= obj.pqr; // store the refernce
 // obj.pqr()  // calling the functin. its good
 // c()// cant call function bcz c is reference of pqr
+
+
+
+
+// const arr= ["Subha","abc","xyz"]
+// const ans= arr.includes("abc",2)  // from 2 it will start searching
+// console.log(ans)
+
+
+// const obj= {
+//   name:"Subha",
+//   roll:29,
+//   mark:{math:23,
+//         chem: 54
+//   }
+// }
+
+// //Deep Copy= deep copy does not chnage the original obj value
+// const obj2={...obj}
+// obj2.name="Samir"
+// obj2.mark.math=100
+// console.log(obj.name)
+// console.log(obj.mark.math)
+
+// // shalow copy: its change the original obj value also
+// const obj3= obj
+// obj3.name="Samir"
+// obj3.mark.chem=200
+// console.log(obj.name)
+// console.log(obj.mark.chem)
+
+
+
+
+
+
