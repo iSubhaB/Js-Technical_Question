@@ -19,9 +19,15 @@
 // console.log(a)
 
 
+// const arr=[1,2,3,4,5,6,7]
+// let arr2= arr.map(el=>el>2)
+// console.log(arr2)
 
-//  console.log(0.1+0.2===0.3)
-// console.log(typeof null)  
+
+
+
+// console.log(0.1+0.2===0.3)                            //********************* */
+// console.log(typeof null) 
 // console.log(typeof NaN)  
 // console.log(typeof [Object])
 // console.log(typeof Object)
@@ -34,7 +40,7 @@
 
 
 // const arr= [1,2,3,4,5,6]
-// const arr2= arr.filter(num=>num*2)  // there are no condition so it return the array
+// const arr2= arr.filter((num)=>{ return num*2})  // there are no condition so it return the array
 // console.log(arr2)
 
 
@@ -46,6 +52,7 @@
 //          }
 //  for(let k in arr){
 //      console.log(k);
+//      console.log(arr[k])
 //  }
 
 
@@ -63,15 +70,15 @@
 
 
 // var arr = [1, 2, 3, 4, 5];
-// let c = arr.splice(2, 4);
-// document.write(arr + "</br>");
-// document.write(c + "</br>");
+// let c = arr.splice(2, 1);
+// console.log(arr + "</br>");
+// console.log(c + "</br>");
 
 
 
 // var arr = [1, 2, 3, 4, 5];
 // arr.map((v) => {
-//   document.write(v + "</br>");
+//   console.log(v );
 // });
 
 
@@ -114,26 +121,21 @@
 
 // const arr = ['hello',"hi",'welcome','by'];
 // arr.reverse();
-// document.write(arr);
+// console.log(arr);
 
 
 // console.log(0 == "0");
-
-
 // console.log("5" + 5);
-
-
 // console.log("5" - 5);
-
-
 // console.log(true + 5);
 
 
+
 // for (var i = 0; i < 5; i++) {
-//   document.write(i);
-//   document.write("/n");
+//   console.log(i);
+//   console.log("/n");
 //   setTimeout(() => {
-//     document.write(i);
+//    console.log(i);
 //   }, i * 1000);
 // }
 
@@ -170,11 +172,15 @@
 // document.write(arr)
 
 
-//       const input =[1,2,-2,11,7,1]   // reverse the no
-//     const arr= input.reverse((v)=>{
-//       return v
-//     })
-//     console.log(arr)
+    //   const input =[1,2,-2,11,7,1]   // reverse the no
+    // const arr= input.reverse((v)=>{
+    //   return v
+    // })
+    // console.log(arr)
+
+    //  const input =[1,2,-2,11,7,1] 
+    //  console.log( input.reverse())
+    
 
 
 //     const arr2= input.sort((a,b)=>a-b)  // sort the numbber
@@ -192,6 +198,8 @@
 
 
 // const input =[1,2,-2,11,7,1]   // 2nd highest no print
+// let sortvalue= input.sort((a,b)=>a-b)
+// console.log(sortvalue[sortvalue.length-2])
 
 
 // let arr=input.sort((a,b)=>{  // short small to big
@@ -304,6 +312,20 @@
 // console.log(space); // Output: "My Name Is Subha Biswas"
 
 
+//  const str = "MyNameIsSubhaBiswas";
+//  let value= ''
+
+//  for (let i=0;i<str.length;i++){
+//     if(str[i]==str[i].toUpperCase()){
+//         value= value+" "+str[i]
+//     }else{
+//         value= value+str[i]
+//     }
+//  }
+//  console.log(value)
+
+
+
 //    const days = ["Sunday", "Tuesday", "Thursday", "Saturday"];
 
 
@@ -332,10 +354,10 @@
 // console.log(arr.includes(2))
 
 
-// //Delete last 3 elemnet of a array
+//Delete last 3 elemnet of a array
 // const arr=[1,2,3,4,5,6]
-// arr.splice(arr.length-3,3)
-// document.write(arr)
+// arr.splice(-3,3)
+// console.log(arr)
 
 
 // const arr= [1,2,3,4,5]
@@ -352,15 +374,10 @@
 //     arr2.push(i,i+1)
 //   }
 // }
-// document.write(arr2)
+// console.log(arr2)
 
 
 // console.log(isNaN("subha"));
-
-
-// const arr=[1,2,3,4,5,6,7]
-// let arr2= arr.map(el=>el<2)
-// console.log(arr2)
 
 
 // const arr=[1,2,3,4,5,6,7]
@@ -378,6 +395,18 @@
 // for (let k of arr){
 //     if(max.length<k.length){
 //         max=k
+//     }
+// }
+// console.log(max)
+
+
+// const str="my name is subha biswas"
+
+// let arr= str.split(" ")
+// let max= arr[0]
+// for (let i=0;i<arr.length;i++){
+//     if(arr[i].length>arr[0].length){
+//         max=arr[i]
 //     }
 // }
 // console.log(max)
@@ -408,8 +437,6 @@
 
 // function abc(){
 //     var a= 100;
-
-
 // }
 // console.log(a)
 
@@ -418,6 +445,19 @@
 // const arr2= new Set(arr)
 // console.log(arr2)
 
+
+//  const arr= [1,2,3,4,4,5,5,8,8] 
+//  let arr2= []
+// let arr3= []
+//  for(let i=0;i<arr.length;i++){
+//     if(arr2.includes(arr[i])){
+//      arr3.push(arr[i])
+//     }else{
+//         arr2.push(arr[i])
+//     }
+//  }
+//  console.log(arr2)
+//  console.log(arr3)
 
 
 // const arr= [1,2,3,4,4,5,5,8,8]
@@ -487,7 +527,7 @@
 // arr.shift()
 // console.log(arr)
 
-// const arr= [10,20,50,87,28,95] // delete 1st value
+// const arr= [10,20,50,87,28,95] // delete last value
 // arr.pop()
 // console.log(arr)
 
@@ -517,11 +557,13 @@
 // }
 // console.log(arr3)
 
+
 // const arr = [1, 3, 4, 7, 9, 9, 4, 2]; //finding not reapeing value
 // let arr2= arr.filter((v)=>{
 // return arr.indexOf(v)==arr.lastIndexOf(v)
 // })
 // console.log(arr2);
+
 
 // const num=6   //factorial of the number
 // let fac=1;
@@ -558,6 +600,9 @@
 //   }
 // }
 
+
+
+
 // let num =7   // number series
 // for (let i=1;i<=10;i++){
 // console.log(`${num}*${i}=${num*i}`)
@@ -580,18 +625,9 @@
 // })
 // console.log(arr3.join(" "))
 
-// const str= "my name is subha biswas"  // print 1st charrecter as Capital
-// let arr2=[]
-// let arr= str.split(' ')
-// arr.forEach((v)=>{
-//   let k=v.split('')
-//   arr2.push(k[0].toUpperCase()+k.slice(1,v.length).join(""))
 
-// })
-// console.log(arr2.join(" "))
 
 // const a= [8,9,10,11,12]
-
 // function abc(b,...a){   // WHAT WILL PRINT  a . and if ...a is npot present then?
 //       console.log(a)
 // }
@@ -608,6 +644,8 @@
 //  const obj = { a: 1, b: 2, c: 3 };
 //  const arr= Object.entries(obj)
 //  console.log(arr)
+
+
 
 // const arr=[100,"a",20,"Subha","biswas","b",30];
 // const arr2=[];
@@ -629,7 +667,10 @@
 // console.log(ch)
 // console.log(arr2)
 
+
+
 // const arr = [100, "a", 20, "Subha", "biswas", "b", 30];
+
 
 // const arr2 = arr.filter(e => typeof e === "number");
 // const number = arr.filter(e => typeof e === "string" && e.length > 1);
@@ -639,16 +680,17 @@
 // console.log(ch);     // ["a", "b"]
 // console.log(arr2);   // [100, 20, 30]
 
+
 //  const obj= {
 //       NAME:"Subha",
 //       roll:20,
 //       sub:"math",
 //       add:"rathtala"
 //  }
-
 //  const {NAME,...oth}=obj;   //distructuring
 //  console.log(NAME);
 //  console.log(oth)
+
 
 // const obj2={
 //       dist:"burdWAN",
@@ -657,6 +699,8 @@
 
 // const obj3={...obj,...obj2}
 // console.log(obj3)
+
+
 
 // const obj1={};
 // const obj2={
@@ -671,9 +715,10 @@
 // obj1[obj3]={
 //       name:"Amar Debnath"
 // }
-
 // console.log(obj1)
 // console.log(obj1[obj2])  //obj1 of something means only obj1. so it will print latest value of it
+
+
 
 // function sum(a,b){
 //       if(a && b){
@@ -689,7 +734,7 @@
 
 // console.log(null===undefined)
 // console.log(null==undefined)  //Because both null and undefined mean “no value”
-// value of both are same
+// // value of both are same
 
 //swap two number without any extra variable
 // let a=10;
@@ -753,7 +798,6 @@
 // let abc = 100;
 // if (function xyz() { }) {
 //   abc = abc + typeof xyz;
-//   console.log(typeof xyz);
 // }
 // console.log(abc);
 //   // here function is not declaration . it work like function expression and it work like Scoping. so thats why it will undefine outside scop
@@ -802,7 +846,97 @@
 // console.log(obj.mark.chem)
 
 
+// class abc {                       //Class Example  
+//     constructor(age,name){
+//         this.age=age;
+//         this.name=name
+//     }
+//       bca(age,name) {
+//         console.log(`name is ${this.name}`) 
+//     }
+// }
+// const obj= new abc(23,"subha")
+// obj.bca()
 
 
+
+
+// const arr = [1, 2, 4, 4, 5, 6, 7, 7, 7, 8];
+// const arr2 = arr.sort((a, b) => a - b);
+// let arr3 = []; // repeating
+// let arr4 = []; // non-repeating
+
+// for (let i = 0; i < arr2.length; i++) {
+//   if (arr2.indexOf(arr2[i]) !== arr2.lastIndexOf(arr2[i])) {
+//     // repeating
+//     if (!arr3.includes(arr2[i])) arr3.push(arr2[i]);
+//   } else {
+//     // non-repeating
+//     arr4.push(arr2[i]);
+//   }
+// }
+
+// console.log("Repeating values:", arr3);
+// console.log("Non-repeating values:", arr4);
+
+
+// const arr = [1, 2, 4, 4, 5, 6, 7, 7, 7, 8];
+// const arr2 = arr.sort((a, b) => a - b);
+// let arr3 = []; // repeating
+// let arr4 = []; // non-repeating
+// for (let i = 0; i < arr2.length; i++){
+//     if(arr[i]==arr[i+1]){
+//         if(arr3.includes(arr[i])){
+//             continue
+//         }else{
+//    arr3.push(arr[i])
+//         }
+//     }else{
+//         arr4.push(arr[i])
+//     }
+// }
+// console.log(arr3)
+// console.log(arr4)
+
+
+
+//  const arr = [1, 2, 4, 4, 5, 6, 7, 7, 7, 8];
+//   const arr2 = arr.sort((a, b) => a - b);
+//   let arr3=[];
+
+//    for (let i = 0; i < arr2.length; i++){
+//    if(arr3.includes(arr[i])){
+//     continue;
+//    }else{
+//     arr3.push(arr[i])
+//    }
+// }
+// console.log(arr3)
+
+
+
+// let text = "abcddefghhhkkprjcgdj";  // uniq substring
+// let uniqstring= [];
+// let uniqchar="";
+//  for (let i=0;i<text.length;i++){
+// let char= text[i]
+// if(uniqchar.includes(text[i])){
+//     uniqstring.push(uniqchar);
+//     uniqchar= char;
+// }else{
+//     uniqchar= uniqchar+char
+// }
+//  }
+//  if(uniqchar){
+//     uniqstring.push(uniqchar)
+//  }
+// console.log(uniqstring) 
+
+
+
+// // count any no without using loop or string.
+// const no= 99345;
+// const count=Math.floor( Math.log10(no)+1)
+// console.log(count)
 
 
